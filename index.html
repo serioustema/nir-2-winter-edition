@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="./switcher.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+</head>
+<body>
+	<header>
+		<img id="logo" src="./popup-icon.png">
+		<h1>Audio NIR 2: Winter Edition</h1>
+		<div class="form-check form-check-inline" style="position: absolute; top: 21px; left: 256px;">
+			<input class="form-check-input" type="checkbox" id="insite-controller" checked>
+		  </div>
+	</header>
+	<div class="playing-tabs">
+		<h1 id="cur-tab-header">Текущее аудио:</h1>
+		<div class="urls">
+		</div>
+	</div>
+	<div class="settings">
+		<div class="scope">
+			<form id="status-form">
+				<label for="curTab">
+					<input type="radio" id="curTab" name="radio" data-type="curTab" value="curTab" checked>
+					<span class="rdo"></span>
+					<span>Только в этом окне</span>
+	
+					<div class="check"></div>
+				</label>
+				<br>
+					
+				<label for="curUrl">
+					<input type="radio" id="curUrl" name="radio" data-type="curUrl" value="curUrl">
+					<span class="rdo"></span>
+					<span id="sitename">Всегда на этом сайте</span>
+	
+					<div class="check"></div>
+				</label>
+				<br>
+	
+				<label for="allUrl">
+					<input type="radio" id="allUrl" name="radio" data-type="allUrl" value="allUrl">
+					<span class="rdo"></span>
+					<span>Всегда на всех сайтах</span>
+	
+					<div class="check"></div>
+				</label>
+			</form>
+		</div>
+
+		<div style="width: 100%; height: 2px; background: rgba(202, 202, 202, 0.4); position: absolute; left: 0; top: 415px; z-index: 999999;"></div>
+
+		<div class="footer">
+			<div>
+				<img src="/warning_w.png" style="margin-right: 16px;">
+			</div>
+			<h1>Браузер запретит переход в полноэкранный режим</h1>
+		</div>
+	</div>
+
+	<div class="sidebar">
+		<div class="main-slider">
+			<div id="slider-volume"></div>
+
+			<div class="lineParent">
+				<div class="line" style="left: 55px; top: 45px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line sm-line" style="left: 55px; top: 71px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 98px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line sm-line" style="left: 55px; top: 125px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 150px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line sm-line" style="left: 55px; top: 177px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 204px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line sm-line" style="left: 55px; top: 231px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 257px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line sm-line" style="left: 55px; top: 283px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 308px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				
+				<div class="line sm-line" style="left: 55px; top: 334px; position: absolute; background: rgb(146, 146, 146); border: 2px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+				<div class="line" style="left: 55px; top: 360px; position: absolute; background: rgb(146, 146, 146); border: 3px solid rgb(146, 146, 146); box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2); transform: rotate(90deg);"></div>
+			</div>
+		</div>
+		<div class="cur-volume">
+			<span id="current-volume">100%</span>
+		</div>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery.switcher.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

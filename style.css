@@ -1,0 +1,330 @@
+@font-face {
+	font-family: 'Teko';
+	src: url('./Teko-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Teko';
+	src: url('./Teko-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('./Ubuntu-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('./Ubuntu-Medium.ttf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('./Ubuntu-Bold.ttf');
+	font-weight: 700;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: white;
+	width: 400px;
+	min-height: 480px;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	padding: 13px 16px;
+	display: flex !important;
+	align-items: center;
+	justify-content: flex-start;
+	border-bottom: 1px solid #00000020;
+}
+
+header h1 {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	color: #747474;
+	font-size: 14px;
+	margin: 0;
+	width: 70px;
+}
+
+#logo {
+	margin-right: 10px;
+}
+
+.playing-tabs {
+	width: 79%;
+	min-height: 170px;
+	max-height: 170px;
+	padding: 16px 16px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-flow: column;
+}
+
+.playing-tabs h1 {
+	margin: 0;
+	font-family: 'Ubuntu';
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 4px;
+	color: #747474;
+	width: 280px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#cur-tab-header {
+	font-size: 14px;
+	color: #9970DD;
+	font-weight: normal;
+	font-size: 14px;
+	width: 100%;
+    overflow: auto;
+    text-overflow: clip;
+}
+
+.urls {
+	height: 85%;
+	overflow-y: auto;
+}
+
+.settings {
+	width: 100%;
+	height: 100%;
+	background: #9970DD;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 16px 16px;
+	padding-bottom: 0;
+}
+
+#status-form {
+	text-align: left;
+	font-family: 'Ubuntu';
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.scope {
+	margin-bottom: 40px;
+}
+
+.footer {
+	width: 75%;
+	height: 45px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-family: 'Ubuntu';
+	color: #FFFFFF;
+}
+
+.footer h1 {
+	font-size: 17px !important;
+}
+
+.sidebar {
+	width: 85px;
+	height: 100%;
+	box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	right: 0px;
+	top: 0;
+	background: white;
+	font-family: 'Ubuntu';
+	color: #9970DD;
+	font-weight: bold;
+	font-size: 14px;
+
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cur-volume {
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.main-slider {
+    height: 415px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#slider-volume {
+	height: 80%;
+}
+
+.custom-switch.custom-switch-md .custom-control-label {
+	padding-left: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+.custom-switch.custom-switch-md .custom-control-label::before {
+	height: 1.2rem;
+	width: calc(2rem + 0.75rem);
+	border-radius: 4px;
+}
+
+.custom-switch.custom-switch-md .custom-control-label::after {
+	width: calc(1.03rem - 0px);
+	height: calc(1.0rem - 1px);
+	border-radius: 2px;
+	background: #FFFFFF;
+	border: 1px solid #BDCDE6;
+}
+
+.custom-switch.custom-switch-md .custom-control-input:checked ~ .custom-control-label::after {
+	transform: translateX(calc(1.7rem - 0.25rem));
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #FFCE22 !important;
+  background-color: #FFCE22 !important;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+	background: #7B7A7A;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.theme-green .back-bar {
+	background: #865EC7 !important;
+	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.35) !important;
+	border-radius: 5px !important;
+}
+
+.theme-green .back-bar .selected-bar {
+	background: linear-gradient(180deg, #FFFFFF 0%, #A4ACB7 100%) !important;
+	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.35) !important;
+	border-radius: 5px !important;
+}
+
+.theme-green .back-bar .pointer {
+	background: #FFFFFF !important;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+select {
+	background: #505050 !important;
+    border-radius: 1px !important;
+	color: #FFCE22 !important;
+    font-family: 'Teko' !important;
+    font-size: 18px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid transparent !important;
+}
+
+option:checked {
+	color: #FFCE22 !important;
+}
+
+option {
+	color: white;
+}
+
+#status-form label::before {
+	background-color: red !important;
+}
+
+input[type=radio]{
+	position: absolute;
+	visibility: hidden;
+  }
+  
+label {
+	display: block;
+	position: relative;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 4px 25px 25px 38px;
+	margin: 10px auto;
+	height: 30px;
+	z-index: 9;
+	cursor: pointer;
+	-webkit-transition: all 0.25s linear;
+	font-family: 'Ubuntu';
+  }
+  
+.check{
+	display: block;
+	position: absolute;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+	top: 6px;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+	left: 0px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+	background: #865EC7;
+  }
+  
+  .check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 11px;
+	width: 11px;
+	top: 5px;
+	left: 5px;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+  }
+  
+  input[type=radio]:checked ~ .check {
+	border: 2px solid white;
+  }
+  
+  input[type=radio]:checked ~ .check::before{
+	background: white;
+  }
+  
+  input[type=radio]:checked ~ label{
+	color: white;
+  }
+
+
+a {
+	text-decoration: none;
+    background-size: 24px;
+    background-repeat: no-repeat;
+	background-position: 0px center;
+	color: #3A3A3A !important;
+	padding: 12px 12px 12px 36px;
+
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	max-width: 280px;
+	line-height: 0px;
+}
